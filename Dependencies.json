@@ -24,5 +24,31 @@
     "axis",
     "plotting"
   ]
+},
+{
+  "name": "ActionBar-PullToRefresh",
+  "summary": "ActionBar-PullToRefresh provides an easy way to add a modern version of the pull-to-refresh interaction to your application.",
+  "version": "0.9.9",
+  "type": "module",
+  "copyright": "2013 Chris Banes",
+  "homepage": "https://github.com/chrisbanes/ActionBar-PullToRefresh",
+  "license": "Apache 2.0",
+  "authors": [
+    {
+      "name": "Chris Banes",
+      "email": "chris@banes.me"
+    }
+  ],
+  "minimum_api": 7,
+  "source": {
+    "name": "Gradle Buddy",
+    "repository": "mavenCentral",
+    "repositoryUrl": "",
+    "dependency": "compile 'com.github.chrisbanes.actionbarpulltorefresh:library:+'"
+  },
+  "tags": [
+    "animation",
+    "reload"
+  ]
 }
 ]
