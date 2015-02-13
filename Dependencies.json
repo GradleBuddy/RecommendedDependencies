@@ -1,0 +1,28 @@
+[
+{
+  "name": "AChartEngine",
+  "summary": "This is a charting software library for Android applications. Mobile phones, tablets and other gadgets running Android will probably benefit of this charting library.",
+  "version": "1.2.0",
+  "copyright": "2013 AChartEngine",
+  "homepage": "https://code.google.com/p/achartengine/",
+  "license": "Apache 2.0",
+  "authors": [
+    {
+      "name": "AChartEngine",
+      "email": "contact@achartengine.org"
+    }
+  ],
+  "minimum_api": 1,
+  "source": {
+    "name": "Gradle Buddy",
+    "repository": "maven",
+    "repositoryUrl": "https://repository-achartengine.forge.cloudbees.com/snapshot/",
+    "dependency": "compile group: 'org.achartengine', name: 'achartengine', version: '1.2.0'"
+  },
+  "tags": [
+    "graph",
+    "axis",
+    "plotting"
+  ]
+}
+]
