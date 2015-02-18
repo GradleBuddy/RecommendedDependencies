@@ -228,7 +228,7 @@
 {
   "name": "CardLibrary - Core",
   "summary": "Android Library to build a UI Card.",
-  "release_notes": "LIB-EXTRA: Added a CardGridStaggeredView<br/><br/>LIB: Added the chance to use a ForegroundLinearLayout in your Card<br/><br/>LIB: Added a feature to use a own OnScrollListener with CardListView and Swipe Action<br/><br/>LIB: Added the method ViewToClickToExpand.setupCardElement() to enable the expand/collapse action on the default card elements<br/><br/>LIB: Introduced a flag to disable the default broadcast after a bitmap is attached to an imageView in CardThumbnail.",
+  "release_notes": "LIB-CORE:Fixed NPE in ForegroundLinearLayout\n\nLIB-CORE:Fixed expand area with CardWithList",
   "version": "2.0.1",
   "type": "module",
   "copyright": "Gabriele Mariotti 2014",
@@ -259,7 +259,7 @@
 {
   "name": "CardLibrary - Full",
   "summary": "Android Library to build a UI Card. All optional card libraries included (staggered, drag and drop, etc).",
-  "release_notes": "",
+  "release_notes": "LIB-CORE:Fixed NPE in ForegroundLinearLayout\n\nLIB-CORE:Fixed expand area with CardWithList",
   "version": "2.0.1",
   "type": "module",
   "copyright": "Gabriele Mariotti 2014",
@@ -300,6 +300,36 @@
     "table",
     "ui",
     "play"
+  ]
+},
+{
+  "name": "CircleImageView",
+  "summary": "A fast circular ImageView perfect for profile images. This is based on RoundedImageView from Vince Mi which itself is based on techniques recommended by Romain Guy.\n\nIt uses a BitmapShader and does not:\n\ncreate a copy of the original bitmap\nuse a clipPath (which is neither hardware accelerated nor anti-aliased)\nuse setXfermode to clip the bitmap (which means drawing twice to the canvas)\nAs this is just a custom ImaveView and not a custom Drawable or a combination of both, it can be used with all kinds of drawables, i.e. a PicassoDrawable from Picasso or other non-standard drawables (needs some testing though).",
+  "release_notes": "1.1.0\nAdd support for ColorDrawables\nAdd getters and setters for border color and border width",
+  "version": "1.2.0",
+  "type": "module",
+  "copyright": "Copyright 2014 Henning Dodenhof",
+  "homepage": "https://github.com/hdodenhof/CircleImageView",
+  "license": "Apache",
+  "authors": [
+    {
+      "name": "Henning Dodenhof",
+      "email": "henning.dodenhof@gmail.com"
+    }
+  ],
+  "minimum_api": 9,
+  "source": {
+    "name": "Gradle Buddy",
+    "repository": "mavenCentral",
+    "repositoryUrl": "",
+    "dependency": "compile 'de.hdodenhof:circleimageview:1.2.1'"
+  },
+  "tags": [
+    "Image",
+    "circle",
+    "Ramian Guy",
+    "Rounded",
+    "Vince Mi"
   ]
 }
 ]
