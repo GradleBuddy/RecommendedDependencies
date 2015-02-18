@@ -305,8 +305,8 @@
 {
   "name": "CircleImageView",
   "summary": "A fast circular ImageView perfect for profile images. This is based on RoundedImageView from Vince Mi which itself is based on techniques recommended by Romain Guy.\n\nIt uses a BitmapShader and does not:\n\ncreate a copy of the original bitmap\nuse a clipPath (which is neither hardware accelerated nor anti-aliased)\nuse setXfermode to clip the bitmap (which means drawing twice to the canvas)\nAs this is just a custom ImaveView and not a custom Drawable or a combination of both, it can be used with all kinds of drawables, i.e. a PicassoDrawable from Picasso or other non-standard drawables (needs some testing though).",
-  "release_notes": "1.1.0\nAdd support for ColorDrawables\nAdd getters and setters for border color and border width",
-  "version": "1.2.0",
+  "release_notes": "",
+  "version": "1.2.1",
   "type": "module",
   "copyright": "Copyright 2014 Henning Dodenhof",
   "homepage": "https://github.com/hdodenhof/CircleImageView",
@@ -330,6 +330,38 @@
     "Ramian Guy",
     "Rounded",
     "Vince Mi"
+  ]
+},
+{
+  "name": "Colours",
+  "summary": "A beautiful set of predefined colors and a set of color methods to make your Android development life easier.",
+  "release_notes": "",
+  "version": "1.0.0",
+  "type": "module",
+  "copyright": "Matthew York 2014",
+  "homepage": "https://github.com/MatthewYork/Colours",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Matthew York",
+      "email": "myork@cs.ua.edu"
+    }
+  ],
+  "minimum_api": 9,
+  "source": {
+   "name": "Gradle Buddy",
+    "repository": "mavenCentral",
+    "repositoryUrl": "",
+    "dependency": "compile 'com.github.matthewyork:ColoursLibrary:1.0.+@aar'"
+  },
+  "dependencies": null,
+  "tags": [
+    "color",
+    "colour",
+    "utility",
+    "hsb",
+    "rgb",
+    "scheme"
   ]
 }
 ]
