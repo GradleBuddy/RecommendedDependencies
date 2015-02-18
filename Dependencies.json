@@ -137,5 +137,169 @@
     "google",
     "music"
   ]
-}
+},
+{
+  "name": "AndroidStaggeredGrid",
+  "summary": "An Android staggered grid view which supports multiple columns with rows of varying sizes.",
+  "release_notes": "- Fixed OnScrollListener issue after updating contents #100\n- Fixed LayoutParams casting issue when recycling state #102\n- Fixed the onClick item id #86\n- Fixed bug that the default case on Touch event #67\n- Fixed for \"NPE onSizeChanged\" #41 PR #91\n- Added guard against issue #45\n- Fixed setAdapter bug #86 #85\n- Using newest build tools and libraries - #78 #96",
+  "version": "1.0.5",
+  "type": "module",
+  "copyright": "2013 Etsy",
+  "homepage": "https://github.com/AndroidGears/AndroidStaggeredGrid",
+  "license": "Apache 2.0",
+  "authors": [
+    {
+      "name": "Etsy",
+      "email": "gearshelp@gmail.com"
+    }
+  ],
+  "minimum_api": 5,
+  "source": {
+    "name": "Gradle Buddy",
+    "repository": "mavenCentral",
+    "repositoryUrl": "",
+    "dependency": "compile 'com.etsy.android.grid:library:1.0.5'"
+  },
+  "tags": [
+    "table",
+    "unequal"
+  ]
+},
+{
+  "name": "ButterKnife",
+  "summary": "View \"injection\" library for Android which uses annotation processing to generate boilerplate code for you.\n\nEliminate findViewById calls by using @InjectView on fields.\nGroup multiple views in a list using @InjectViews. Operate on all of them at once with actions, setters, or properties.\nEliminate anonymous inner-classes for listeners by annotating methods with @OnClick and others.",
+  "release_notes": ".",
+  "version": "6.1.0",
+  "type": "jar",
+  "copyright": "Copyright 2013 Jake Wharton",
+  "homepage": "http://jakewharton.github.io/butterknife/",
+  "license": "Apache",
+  "authors": [
+    {
+      "name": "Jake Wharton",
+      "email": "jakewharton@gmail.com"
+    }
+  ],
+  "minimum_api": 6,
+  "source": {
+    "name": "Gradle Buddy",
+    "repository": "mavenCentral",
+    "repositoryUrl": "",
+    "dependency": "compile 'com.jakewharton:butterknife:6.1.0'"
+  },
+  "tags": [
+    "Injection",
+    "annotation processing",
+    "annotation"
+  ]
+},
+{
+  "name": "Calligraphy",
+  "summary": "Custom fonts in Android the easy way.\n\nAre you fed up of Custom views to set fonts? Or traversing the ViewTree to find TextViews? Yeah me too.",
+  "version": "0.7.1",
+  "type": "jar",
+  "copyright": "Copyright 2013 Christopher Jenkins",
+  "homepage": "https://github.com/chrisjenx/Calligraphy",
+  "license": "Apache",
+  "authors": [
+    {
+      "name": "Christopher Jenkins",
+      "email": "none"
+    }
+  ],
+  "minimum_api": 7,
+  "source": {
+    "name": "Gradle Buddy",
+    "repository": "mavenCentral",
+    "repositoryUrl": "",
+    "dependency": "compile 'uk.co.chrisjenx:calligraphy:2.0.1'"
+  },
+  "tags": [
+    "font",
+    "custom",
+    "customize",
+    "text",
+    "easy",
+    "simple",
+    "beautiful",
+    "fontFamily"
+  ]
+},
+{
+  "name": "CardLibrary - Core",
+  "summary": "Android Library to build a UI Card.",
+  "release_notes": "LIB-EXTRA: Added a CardGridStaggeredView<br/><br/>LIB: Added the chance to use a ForegroundLinearLayout in your Card<br/><br/>LIB: Added a feature to use a own OnScrollListener with CardListView and Swipe Action<br/><br/>LIB: Added the method ViewToClickToExpand.setupCardElement() to enable the expand/collapse action on the default card elements<br/><br/>LIB: Introduced a flag to disable the default broadcast after a bitmap is attached to an imageView in CardThumbnail.",
+  "version": "2.0.1",
+  "type": "module",
+  "copyright": "Gabriele Mariotti 2014",
+  "homepage": "https://github.com/gabrielemariotti/cardslib",
+  "license": "Apache 2.0",
+  "authors": [
+    {
+      "name": "Gabriele Mariotti",
+      "email": "gabri.mariotti@gmail.com"
+    }
+  ],
+  "minimum_api": 14,
+  "source": {
+    "name": "Gradle Buddy",
+    "repository": "mavenCentral",
+    "repositoryUrl": "",
+    "dependency": "compile 'com.github.gabrielemariotti.cards:cardslib-core:2.0.1'"
+  },
+  "dependencies": null,
+  "tags": [
+    "card",
+    "android",
+    "table",
+    "ui",
+    "play"
+  ]
+},
+{
+  "name": "CardLibrary - Full",
+  "summary": "Android Library to build a UI Card. All optional card libraries included (staggered, drag and drop, etc).",
+  "release_notes": "",
+  "version": "2.0.1",
+  "type": "module",
+  "copyright": "Gabriele Mariotti 2014",
+  "homepage": "https://github.com/gabrielemariotti/cardslib",
+  "license": "Apache 2.0",
+  "authors": [
+    {
+      "name": "Gabriele Mariotti",
+      "email": "gabri.mariotti@gmail.com"
+    }
+  ],
+  "minimum_api": 14,
+  "source": {
+    "name": "Gradle Buddy",
+    "repository": "mavenCentral",
+    "repositoryUrl": "",
+    "dependency": "compile 'com.github.gabrielemariotti.cards:cardslib-core:2.0.1'
+
+    //Optional for built-in cards
+    compile 'com.github.gabrielemariotti.cards:cardslib-cards:2.0.1'      
+
+    //Optional for RecyclerView
+    compile 'com.github.gabrielemariotti.cards:cardslib-recyclerview:2.0.1'  
+
+    //Optional for staggered grid view
+    compile 'com.github.gabrielemariotti.cards:cardslib-extra-staggeredgrid:2.0.1'       
+
+    //Optional for drag and drop
+    compile 'com.github.gabrielemariotti.cards:cardslib-extra-dragdrop:2.0.1'  
+
+    //Optional for twoway  (coming soon)
+    //compile 'com.github.gabrielemariotti.cards:cardslib-extra-twoway:2.0.1'"
+  },
+  "dependencies": null,
+  "tags": [
+    "card",
+    "android",
+    "table",
+    "ui",
+    "play"
+  ]
+},
 ]
